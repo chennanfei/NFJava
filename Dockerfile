@@ -1,5 +1,7 @@
-FROM nanfei/tomcat6:latest
+FROM nanfei/tomcat6
 
-file="did-demo.war"
+#FILE="did-demo.war"
 
-ADD ./did-demo.war $CATALINA_HOME/webapps/
+#ADD ./${FILE} $CATALINA_HOME/webapps/
+
+CMD ["/run.sh"]
